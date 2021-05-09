@@ -1,101 +1,171 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Irene Sánchez, Patricia Herranz, Asther Trinidad" />
+    <meta charset="utf-8" />
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta name="description" content="Web site about Camino de Santiago and the peregrin" />
+
     <title>Goodway Pilgrim</title>
-    <link rel="stylesheet" href="css/index_estilos.css">
+    <!--Estilos-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Importación de fuentes-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
- </head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="assets/js/index.js"></script>
+</head>
+
 <body>
     <header>
         <nav id="nav">
-            <div>
-                <img id="index" class="nav-logo" src="logo/logo_gwp_blanco.png" alt="Logo Goodway Pilgrim">
-            </div>
-            <ul class="index-nav">
-                <li><a href="bbdd.pdf" download="">Caminos</a></li>
-                <li><a href="#">Rutas</a></li>
-                <li><a href="#">Prepárate</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-            </ul>
+            <img id="index" class="nav-logo" src="assets/icons/gwp-blanco-logo.png" alt="Logo Goodway Pilgrim">
 
-            <div class="nav-contenedor-icono-usuario">
-                <img class="nav-icono-usuario" src="iconos/ic_usuario.svg" alt="Icono área usuario">
+            <ul class="enlaces">
+                <li>
+                    <a href="#home" download="">Home</a>
+                </li>
+                <li>
+                    <a href="#sobre-nosotros">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="#caminos" download="">Caminos</a>
+                </li>
+                <li>
+                    <a href="#rutas">Rutas</a>
+                </li>
+                <li>
+                    <a href="#preparate">Prepárate</a>
+                </li>
+                <a href="">
+                    <i id="icon-burger" class="fa fa-bars"></i>
+                </a>
+            </ul>
+            <a href="http://localhost:3000/login">
+                <img class="nav-icono-usuario" src="assets/icons/ic-user.svg" alt="Icono área usuario"></a>
+
             </div>
         </nav>
-    
-        </header>
-        <main>
-            <div class="index-bg01">
+
+    </header>
+    <main>
+        <div class="background-01 background-general">
+            <div class="container-text">
+
+
                 <div>
-                     <h1 class="header-texto-sup">SI EMOCIONA<br>
-                <h1 class="header-texto-inf">PENSARLO</h1>
+                    <h1 class="header-texto-sup">SI EMOCIONA<br>
+                        <h1 class="header-texto-inf">PENSARLO</h1>
                 </div>
-                               <div>
-                     <h1 class="header-texto-sup-dcha">IMAGÍNATE<br>
-                <h1 class="header-texto-inf-dcha">HACERLO</h1>
+                <div>
+                    <h1 class="header-texto-sup-dcha">IMAGÍNATE<br>
+                        <h1 class="header-texto-inf-dcha">HACERLO</h1>
                 </div>
+
             </div>
-            <section class="section01-que-es">
-                <a href="#index">
-                <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-              
-               <p id="index-descripcion">
-                El descubrimiento en Galicia, alrededor del año 820, la tumba del apóstol Santiago, fue uno de los acontecimientos más importantes de la edad Media.
 
-                Es primer Itinerario culturar Europeo y es Patrimonio de la Humanodad. El peregrino sabe que “la meta es el Camino” y goza de cada experiencia hasta culminar la ruta.
-
-                Uno de los símbolos más internacionales del Camino de Santiago es la flecha amarilla, pintada a brocha en calzadas, casas, vallas o árboles.
-
-                La vieira o concha, que podemos ver esculpida en multitud de iglesias o monumentos, y en la actualidad representada, junto a la fecha amarilla, en todos los indicadores del Camino.</p>
-                <h2 id="index-titulo-section">¿Qué es?<small class="camino">Camino de Santiago</small></h2>
-
-            </section>
-            
-            <div class="index-bg02"></div>
-            <section class="section01-que-es">
+        </div>
+        <section class="section01-que-es">
             <a href="#index">
                 <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                blablabla
-            </section>
+                    <img src="assets/icons/ic-concha.png" alt="Concha">
+                </div>
+            </a>
+            <h2 id="index-titulo-section">¿Qué es?<small></small>Camino de Santiago</small></h2>
+            <p id="index-descripcion">
+                El descubrimiento en Galicia, alrededor del año 820, la tumba del apóstol Santiago, fue uno de los
+                acontecimientos más importantes de la edad Media.</p>
+            <p id="index-descripcion">
+                Es primer Itinerario culturar Europeo y es Patrimonio de la Humanodad. El peregrino sabe que “la meta es
+                el Camino” y goza de cada experiencia hasta culminar la ruta.</p>
+            <p id="index-descripcion">
+                Uno de los símbolos más internacionales del Camino de Santiago es la flecha amarilla, pintada a brocha
+                en calzadas, casas, vallas o árboles.</p>
+            <p id="index-descripcion">
+                La vieira o concha, que podemos ver esculpida en multitud de iglesias o monumentos, y en la actualidad
+                representada, junto a la fecha amarilla, en todos los indicadores del Camino.</p>
 
-            <div class="index-bg03"></div>
-            <section class="section01-que-es">
-                <a href="#index">
+        </section>
+
+        <div class="background-02 background-general"></div>
+        <a id="rutas" class="anclajes"></a>
+
+        <section class="section01-que-es">
+            <a href="#index">
                 <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                
-            </section>
+                    <img src="assets/icons/ic-concha.png" alt="Concha">
+                </div>
+            </a>
+            <div id="container">
+                <div id="index-descripcion">
+                    <h2 id="index-titulo-section">Descubre<small class="camino">los diferentes caminos</small></h2>
 
-            <div class="index-bg04"></div>
-            <section class="section01-que-es">
-                 <a href="#index">
+                    <p>
+                        El Camino de Santiago es una aventura dura pero que una vez terminada sabrás que ha sido lo
+                        mejor
+                        que
+                        has podido hacer.</p>
+                    <p>
+                        Conocerás a muchas personas en cada una de las etapas y podrás disfrutar de un sinfín de
+                        conversaciones
+                        como también disfrutarás del silencio mientras te enamoras del paisaje</p>
+                </div>
+                <img class="mapa-caminos" src="assets/imgs/mapa-caminos.png" alt="Etapas Camino Francés">
+
+            </div>
+
+
+        </section>
+
+        <div class="background-03 background-general"></div>
+        <section class="section01-que-es">
+
+            <a href="#index">
                 <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                blablabla
-            </section>
+                    <img src="assets/icons/ic-concha.png" alt="Concha">
+                </div>
+            </a>
+            <p id="index-descripcion">
+                El Camino Francés es el Camino de Santiago de mayor relevancia histórica y el más seguido por los
+                peregrinos. Se caracteriza por su variedad paisajística y su extraordinaria riqueza monumental.</p>
+            <p id="index-descripcion">
+                Debe su origen a tres de las cuatro principales vías históricas de peregrinación que provienen del
+                interior de Europa, las cuales confluyen en la pequeña villa de Ostabat, a pocos kilómetros de Saint
+                Jean Pied de Port. La masificación es su mayor inconveniente.
+            </p>
+            <p>Inicio: <span>Saint Jean de Pied de Port</span><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>Longitud:
+                <span>764</span><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>Etapas a pie: <span>37</span>
+            </p>
+            <img class="mapa-etapas" src="assets/imgs/etapa-frances.png" alt="Etapas Camino Francés">
+        </section>
 
-            <div class="index-bg05"></div>
-            <section class="section01-que-es">
-                <a href="#index">
+        <div class="background-04 background-general"></div>
+        <section class="section01-que-es">
+            <a href="#index">
                 <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                blablabla
-            </section>
+                    <img src="assets/icons/ic-concha.png" alt="Concha">
+                </div>
+            </a>
+            blablabla
+        </section>
+
+        <div class="background-05 background-general"></div>
+        <section class="section01-que-es">
+            <a id="preparate" class="anclajes" />
+
+            <a href="#index">
+                <div class="index-circulo">
+                    <img src="assets/icons/ic-concha.png" alt="Concha">
+                </div>
+            </a>
+            blablabla
+        </section>
 
 
-        </main>
+    </main>
 
 </body>
+
 </html>
