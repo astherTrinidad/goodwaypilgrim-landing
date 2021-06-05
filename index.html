@@ -1,101 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goodway Pilgrim</title>
-    <link rel="stylesheet" href="css/index_estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> 
- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
- </head>
-<body>
+  <head>
+    <meta
+      name="author"
+      content="Irene Sánchez, Patricia Herranz, Asther Trinidad"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Web site about Camino de Santiago and the peregrin"
+    />
+
+    <title>Good Way Pilgrim</title>
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Importación de fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
     <header>
-        <nav id="nav">
-            <div>
-                <img id="index" class="nav-logo" src="logo/logo_gwp_blanco.png" alt="Logo Goodway Pilgrim">
-            </div>
-            <ul class="index-nav">
-                <li><a href="bbdd.pdf" download="">Caminos</a></li>
-                <li><a href="#">Rutas</a></li>
-                <li><a href="#">Prepárate</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
-            </ul>
-
-            <div class="nav-contenedor-icono-usuario">
-                <img class="nav-icono-usuario" src="iconos/ic_usuario.svg" alt="Icono área usuario">
-            </div>
+      <!-- Navbar -->
+      <div class="nav-container">
+        <nav class="navbar">
+          <h1 id="navbar-logo">GWP</h1>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">GWP</a></li>
+            <li><a href="#" class="nav-links">Camino</a></li>
+            <li><a href="#" class="nav-links">Etapas</a></li>
+            <li><a href="#" class="nav-links">Prepárate</a></li>
+            <li>
+              <a href="#" class="nav-links nav-links-btn">Iniciar Sesión</a>
+            </li>
+          </ul>
         </nav>
-    
-        </header>
-        <main>
-            <div class="index-bg01">
-                <div>
-                     <h1 class="header-texto-sup">SI EMOCIONA<br>
-                <h1 class="header-texto-inf">PENSARLO</h1>
-                </div>
-                               <div>
-                     <h1 class="header-texto-sup-dcha">IMAGÍNATE<br>
-                <h1 class="header-texto-inf-dcha">HACERLO</h1>
-                </div>
-            </div>
-            <section class="section01-que-es">
-                <a href="#index">
-                <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-              
-               <p id="index-descripcion">
-                El descubrimiento en Galicia, alrededor del año 820, la tumba del apóstol Santiago, fue uno de los acontecimientos más importantes de la edad Media.
+      </div>
+    </header>
 
-                Es primer Itinerario culturar Europeo y es Patrimonio de la Humanodad. El peregrino sabe que “la meta es el Camino” y goza de cada experiencia hasta culminar la ruta.
+    <main class="main">
+      <div class="main-container">
+        <div class="main-content">
+          <h1>Good Way Pilgrim</h1>
+          <h2>Saca el peregrino que llevas dentro y comienza tu aventura</h2>
+          <p>
+            Si estás pensando en realizar el Camino de Santiago o ya lo has
+            realizado y quieres recordar cada uno de ellos, en este portal
+            podrás organizar y almacenar toda la información que te relacione
+            con el Camino. Añade nuevos caminos a tu perfil, lévantate cada
+            mañana y antes de comenzar el camino mira en qué etapa te quedaste,
+            consigue nuestros logros mientras disfrutas de la naturaleza y al
+            final del día márcalas como finalizadas.
+          </p>
+          <p>¡Sé un auténtico peregrino y no pierdas ninguno de tus caminos!</p>
+          <button class="main-btn"><a href="#">Empezar</a></button>
+        </div>
+        <div class="main-img-container">
+          <img src="./assets/imgs/landing_section1.svg" alt="" id="main-img" />
+        </div>
+      </div>
+    </main>
 
-                Uno de los símbolos más internacionales del Camino de Santiago es la flecha amarilla, pintada a brocha en calzadas, casas, vallas o árboles.
-
-                La vieira o concha, que podemos ver esculpida en multitud de iglesias o monumentos, y en la actualidad representada, junto a la fecha amarilla, en todos los indicadores del Camino.</p>
-                <h2 id="index-titulo-section">¿Qué es?<small class="camino">Camino de Santiago</small></h2>
-
-            </section>
-            
-            <div class="index-bg02"></div>
-            <section class="section01-que-es">
-            <a href="#index">
-                <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                blablabla
-            </section>
-
-            <div class="index-bg03"></div>
-            <section class="section01-que-es">
-                <a href="#index">
-                <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                
-            </section>
-
-            <div class="index-bg04"></div>
-            <section class="section01-que-es">
-                 <a href="#index">
-                <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                blablabla
-            </section>
-
-            <div class="index-bg05"></div>
-            <section class="section01-que-es">
-                <a href="#index">
-                <div class="index-circulo">
-                    <img src="logo/concha_blanco.png" alt="Concha">
-                </div></a>
-                blablabla
-            </section>
-
-
-        </main>
-
-</body>
+    <!-- Footer Section -->
+    <script src="./assets/js/index.js"></script>
+  </body>
 </html>

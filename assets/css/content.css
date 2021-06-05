@@ -1,0 +1,12 @@
+.main {
+  background: var(--mediumGrey);
+}
+
+.main-container {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-self: center;
+  margin: 0 auto;
+  width: 80%;
+}
