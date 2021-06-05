@@ -1,13 +1,7 @@
-function cambiarIcono(evento) {
-  alert('dentro de asignar Eventos');
-}
+const menu = document.querySelector("#mobile-menu");
+const menuLinks = document.querySelector(".nav-menu");
 
-function asignarEventos(evento) {
-  if (document.readyState == 'complete') {
-    document
-      .getElementById('icon-burger')
-      .addEventListener('click', cambiarIcono);
-  }
-}
-
-document.addEventListener('readystatechange', asignarEventos);
+menu.addEventListener("click", function () {
+  menu.classList.toggle("is-active");
+  menuLinks.classList.toggle("active");
+});
