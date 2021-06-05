@@ -18,12 +18,13 @@
   color: var(--white);
   justify-self: start;
   margin-left: 40px;
-  width: 80%;
+  width: 85%;
 }
 
 .main-content h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: lighter;
 }
 
 .main-content h2 {
@@ -84,6 +85,12 @@
 #main-img {
   height: 70%;
   width: 70%;
+  transform: scaleX(-1);
+}
+
+#main-map {
+  height: 70%;
+  width: 70%;
 }
 
 @media screen and (max-width: 768px) {
@@ -92,7 +99,7 @@
     background-color: var(--turquoise);
     display: grid;
     grid-template-columns: auto;
-    height: 90vh;
+    height: max-content;
     justify-self: center;
     width: 90%;
     margin: 0 auto;
