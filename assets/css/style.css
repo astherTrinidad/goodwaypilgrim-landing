@@ -219,6 +219,29 @@
   border: 1px solid var(--white);
 }
 
+/** Backpack */
+#backpack {
+  background-color: lime;
+  width: max-content;
+  height: max-content;
+}
+
+#backpack .column {
+  padding: 0;
+}
+
+#backpack img {
+  background-color: purple;
+  width: 166px;
+  height: 166px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+#backpack img:hover {
+  transform: scale(1.5);
+}
+
 @media screen and (max-width: 768px) {
   .nav-container {
     position: relative;
