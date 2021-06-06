@@ -133,22 +133,10 @@
 .accordion ul:hover li {
   background-color: var(--turquoise);
   width: calc((100% - 850px) / 4);
+  z-index: 999;
 }
 
-/* .accordion ul li:hover {
-  background-color: var(--mustard);
-  width: 800px;
-} */
-
-.accordion-open {
-  display: none;
-}
-
-.accordion-close:nth-child(1):hover {
-  display: none;
-}
-.accordion-close:nth-child(1):hover + .accordion-open {
-  display: block;
+.accordion ul li:hover {
   background-color: var(--mustard);
   width: 850px;
 }
@@ -167,52 +155,11 @@
   font-weight: 700;
 }
 
-.accordion-open .number {
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  background-color: var(--darkGrey);
-  color: transparent;
-  font-size: 6rem;
-  font-weight: 900;
-  mix-blend-mode: multiply;
-  text-align: left;
-  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
-}
-
-.accordion-open .camino-name {
-  color: var(--white);
-  margin: 0 0;
-  width: max-content;
-  padding: 1rem;
-}
-
-.accordion-open .etapa-description {
-  color: var(--white);
-  margin: 0 0;
-  width: 100%;
-  height: max-content;
-  padding: 1rem;
-}
-
-.accordion-open .etapa-description p:nth-child(1) {
-  padding-bottom: 1rem;
-}
-
-.accordion-open .camino-name span {
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.accordion-open .camino-data {
-  margin: 0 auto;
-}
-
 .etapas {
   width: max-content;
   height: max-content;
   border-radius: 7px;
-  margin: 1rem auto;
+  margin: 2rem auto;
 }
 
 .etapas img {
@@ -237,7 +184,7 @@
 }
 
 .camino-data {
-  margin: 2.85rem auto;
+  padding: 0rem 5rem;
 }
 
 .camino-data p {
@@ -252,13 +199,19 @@
   width: max-content;
   height: max-content;
   border-radius: 50%;
-  margin: 0 auto;
+  margin: 0 6rem;
+}
+
+.etapa-description p {
+  font-size: 1.25rem;
+  padding: 1.5rem 1rem 1.5rem 6rem;
 }
 
 .fa-download {
   background-color: var(--mustard);
   border-radius: 50%;
   padding: 1rem;
+  margin: 0 1rem 0 1rem;
 }
 
 .fa-download:hover {
