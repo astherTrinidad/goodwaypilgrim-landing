@@ -31,7 +31,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap"
       rel="stylesheet"
     />
 
@@ -101,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="camino">
         <div class="main-container">
           <div class="main-img-container">
             <img
@@ -111,7 +111,7 @@
             />
           </div>
           <div class="main-content">
-            <h1 id="camino">¿Qué es?</h1>
+            <h1>¿Qué es?</h1>
             <h2>Camino de Santiago</h2>
             <p>
               El Camino de Santiago es un conjunto de Caminos compuesto por
@@ -165,96 +165,189 @@
       <section id="etapas">
         <div class="accordion">
           <ul>
-            <li>
-              <p class="number">01</p>
-              <div class="camino-name">
-                <p>Camino</p>
-                <p>Francés</p>
-              </div>
-              <div class="camino-data">
-                <p>Inicio: <span>St. Jean Pied de Port</span></p>
-                <p>Longitud: <span>766.2 km</span></p>
-                <p>Etapas: <span>33</span></p>
-              </div>
-              <div class="camino-icon-download">
-                <a href="./assets/pdf/GWPinfoCaminos.pdf" download
-                  ><i class="fa fa-download"></i>
-                </a>
-              </div>
-            </li>
-            <li>
-              <p class="number">02</p>
-              <div class="camino-name">
-                <p>Camino</p>
-                <p>Primitivo</p>
-              </div>
-              <div class="camino-data">
-                <p>Inicio: <span>Oviedo</span></p>
-                <p>Longitud: <span>307.8km</span></p>
-                <p>Etapas: <span>14</span></p>
-              </div>
-              <div class="camino-icon-download">
-                <a href="./assets/pdf/GWPinfoCaminos.pdf" download
-                  ><i class="fa fa-download"></i>
-                </a>
+            <li class="accordion-close">
+              <div>
+                <p class="number">01</p>
+                <div class="camino-name">
+                  <p>Camino</p>
+                  <p>Francés</p>
+                </div>
+                <div class="camino-data">
+                  <p>Inicio: <span>St. Jean Pied de Port</span></p>
+                  <p>Longitud: <span>766.2 km</span></p>
+                  <p>Etapas: <span>33</span></p>
+                </div>
+                <div class="camino-icon-download">
+                  <a href="./assets/pdf/GWPinfoCaminos.pdf" download
+                    ><i class="fa fa-download"></i>
+                  </a>
+                </div>
               </div>
             </li>
-            <li>
-              <p class="number">03</p>
-              <div class="camino-name">
-                <p>Camino</p>
-                <p>Norte</p>
-              </div>
-              <div class="camino-data">
-                <p>Inicio: <span>Irún</span></p>
-                <p>Longitud: <span>824 km</span></p>
-                <p>Etapas: <span>34</span></p>
-              </div>
-              <div class="camino-icon-download">
-                <a href="./assets/pdf/GWPinfoCaminos.pdf" download
-                  ><i class="fa fa-download"></i>
-                </a>
+            <!-- OPEN -->
+            <li class="accordion-open">
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">01</p>
+                  </div>
+                  <div>
+                    <div class="camino-name">
+                      <p>Camino <span>Francés</span></p>
+                    </div>
+                    <div class="etapa-description">
+                      <p>
+                        El Camino Francés es el Camino de Santiago de mayor
+                        relevancia histórica y el más seguido por los
+                        peregrinos. Se caracteriza por su variedad paisajística
+                        y su extraordinaria riqueza monumental.
+                      </p>
+                      <p>
+                        Debe su origen a tres de las cuatro principales vías
+                        históricas de peregrinación que provienen del interior
+                        de Europa, las cuales confluyen en la pequeña villa de
+                        Ostabat, a pocos kilómetros de Saint Jean Pied de Port.
+                        La masificación es su mayor inconveniente.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:
+                            <span
+                              >St. Jean Pied de
+                              Port&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                            </span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>
+                            Longitud:<span
+                              >766.2km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                            </span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>
+                            Etapas:<span
+                              >33&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span
+                            >
+                          </p>
+                        </div>
+                        <div class="camino-icon-download">
+                          <a href="./assets/pdf/GWPinfoCaminos.pdf" download
+                            >Descargar info<i class="fa fa-download"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-frances.png"
+                      alt="Mapa con las Etapas del Camino Francés"
+                    />
+                  </div>
+                </div>
               </div>
             </li>
-            <li>
-              <p class="number">04</p>
-              <div class="camino-name">
-                <p>Vía de la</p>
-                <p>Plata</p>
-              </div>
-              <div class="camino-data">
-                <p>Inicio: <span>Sevilla</span></p>
-                <p>Longitud: <span>962.8 km</span></p>
-                <p>Etapas: <span>38</span></p>
-              </div>
-              <div class="camino-icon-download">
-                <a href="./assets/pdf/GWPinfoCaminos.pdf" download
-                  ><i class="fa fa-download"></i>
-                </a>
+            <li class="accordion-close">
+              <div>
+                <p class="number">02</p>
+                <div class="camino-name">
+                  <p>Camino</p>
+                  <p>Primitivo</p>
+                </div>
+                <div class="camino-data">
+                  <p>Inicio: <span>Oviedo</span></p>
+                  <p>Longitud: <span>307.8 km</span></p>
+                  <p>Etapas: <span>14</span></p>
+                </div>
+                <div class="camino-icon-download">
+                  <a href="./assets/pdf/GWPinfoCaminos.pdf" download
+                    ><i class="fa fa-download"></i>
+                  </a>
+                </div>
               </div>
             </li>
-            <li>
-              <p class="number">05</p>
-              <div class="camino-name">
-                <p>Camino</p>
-                <p>Portugués</p>
-              </div>
-              <div class="camino-data">
-                <p>Inicio: <span>Tui</span></p>
-                <p>Longitud: <span>118.8 km</span></p>
-                <p>Etapas: <span>6</span></p>
-              </div>
-              <div class="camino-icon-download">
-                <a href="./assets/pdf/GWPinfoCaminos.pdf" download
-                  ><i class="fa fa-download"></i>
-                </a>
+            <!-- OPEN -->
+            <li class="accordion-open">
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">02</p>
+                  </div>
+                  <div>
+                    <div class="camino-name">
+                      <p>Camino <span>Primitivo</span></p>
+                    </div>
+                    <div class="etapa-description">
+                      <p>
+                        El Camino Primitivo es el Camino de Santiago que desde
+                        Oviedo se dirige a Compostela por el interior de
+                        Asturias y Galicia. Debe su origen a la peregrinación
+                        del rey Alfonso II de Asturias en el siglo IX, la
+                        primera de la que se conservan referencias (de ahí el
+                        nombre “Primitivo”).
+                      </p>
+                      <p>
+                        Este camino ha ganado en los últimos años un gran
+                        prestigio en el mundo jacobeo, gracias a sus paisajes, a
+                        su cierta dureza y a la aún moderada afluencia de
+                        peregrinos.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:
+                            <span
+                              >Oviedo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                            </span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>
+                            Longitud:<span
+                              >307.8km&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                            </span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>
+                            Etapas:<span
+                              >14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</span
+                            >
+                          </p>
+                        </div>
+                        <div class="camino-icon-download">
+                          <a href="./assets/pdf/GWPinfoCaminos.pdf" download
+                            >Descargar info<i class="fa fa-download"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-frances.png"
+                      alt="Mapa con las Etapas del Camino Francés"
+                    />
+                  </div>
+                </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
 
-      <section id="Prepárate">
+      <section id="preparate">
         <div class="main-container">
           <div class="main-content">
             <h1>Imprescindibles</h1>
@@ -272,8 +365,8 @@
           </div>
           <div class="main-img-container">
             <img
-              src="./assets/imgs/mapa-caminos.png"
-              alt="Ilustración hikking"
+              src="./assets/imgs/preparate.png"
+              alt="Objetos ilustrados, ropa, saco de dormir, calzado"
               id="main-map"
             />
           </div>
