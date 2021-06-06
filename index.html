@@ -31,7 +31,7 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap"
       rel="stylesheet"
     />
 
@@ -53,9 +53,9 @@
             <span class="bar"></span>
           </div>
           <ul class="nav-menu">
-            <li><a href="#home" class="nav-links">Home</a></li>
             <li><a href="#GWP" class="nav-links">GWP</a></li>
-            <li><a href="#camino" class="nav-links">Camino</a></li>
+            <li><a href="#camino" class="nav-links">Camino de Santiago</a></li>
+            <li><a href="#descubre" class="nav-links">Descubre</a></li>
             <li><a href="#etapas" class="nav-links">Etapas</a></li>
             <li><a href="#preparate" class="nav-links">Prepárate</a></li>
             <li>
@@ -101,7 +101,7 @@
           </div>
         </div>
       </section>
-      <section>
+      <section id="camino">
         <div class="main-container">
           <div class="main-img-container">
             <img
@@ -111,7 +111,7 @@
             />
           </div>
           <div class="main-content">
-            <h1 id="camino">¿Qué es?</h1>
+            <h1>¿Qué es?</h1>
             <h2>Camino de Santiago</h2>
             <p>
               El Camino de Santiago es un conjunto de Caminos compuesto por
@@ -137,7 +137,7 @@
         </div>
       </section>
 
-      <section id="etapas">
+      <section id="descubre">
         <div class="main-container">
           <div class="main-content">
             <h1>Descubre</h1>
@@ -156,6 +156,314 @@
             <img
               src="./assets/imgs/mapa-caminos.png"
               alt="Ilustración hikking"
+              id="main-map"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="etapas">
+        <div class="accordion">
+          <ul>
+            <li>
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">01</p>
+                    <div class="camino-name">
+                      <p>Camino</p>
+                      <p>Francés</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="etapa-description">
+                      <p>
+                        El Camino Francés es el Camino de Santiago de mayor
+                        relevancia histórica y el más seguido por los
+                        peregrinos. Se caracteriza por su variedad paisajística
+                        y su extraordinaria riqueza monumental. La masificación
+                        es su mayor inconeniente.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:&nbsp;
+                            <span>St. Jean Pied de Port </span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>Longitud:&nbsp;<span>766.2km </span></p>
+                        </div>
+                        <div class="column">
+                          <p>Etapas:&nbsp;<span>33</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="camino-icon-download">
+                        <a href="./assets/pdf/GWP_caminofrances.pdf" download
+                          >Descargar info<i class="fa fa-download"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-frances.png"
+                      alt="Mapa con las Etapas del Camino Francés"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">02</p>
+                    <div class="camino-name">
+                      <p>Camino</p>
+                      <p>Primitivo</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="etapa-description">
+                      <p>
+                        El Camino Primitivo es el Camino de Santiago que desde
+                        Oviedo se dirige a Compostela por el interior de
+                        Asturias y Galicia. Ha ganado gran prestigio en el mundo
+                        jacobeo, gracias a sus paisajes, a su cierta dureza y a
+                        la aún moderada afluencia de peregrinos.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:&nbsp;
+                            <span>Oviedo</span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>Longitud:&nbsp;<span>307.8km </span></p>
+                        </div>
+                        <div class="column">
+                          <p>Etapas:&nbsp;<span>14</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="camino-icon-download">
+                        <a href="./assets/pdf/GWP_caminoPrimitivo.pdf" download
+                          >Descargar info<i class="fa fa-download"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-primitivo.png"
+                      alt="Mapa con las Etapas del Camino Primitivo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">03</p>
+                    <div class="camino-name">
+                      <p>Camino del</p>
+                      <p>Norte</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="etapa-description">
+                      <p>
+                        El Camino del Norte, también conocido como “Camino de la
+                        Costa” recorre toda la costa peninsular bordeando los
+                        principales municipios del norte de España.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:&nbsp;
+                            <span>Irún</span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>Longitud:&nbsp;<span>824km </span></p>
+                        </div>
+                        <div class="column">
+                          <p>Etapas:&nbsp;<span>34</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="camino-icon-download">
+                        <a href="./assets/pdf/GWP_caminoNorte.pdf" download
+                          >Descargar info<i class="fa fa-download"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-norte.png"
+                      alt="Mapa con las Etapas del Camino Primitivo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">04</p>
+                    <div class="camino-name">
+                      <p>Vía de la</p>
+                      <p>Plata</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="etapa-description">
+                      <p>
+                        La Vía de la Plata es, el Camino de Santiago, más
+                        importante desde el sur peninsular. El itinerario debe
+                        su origen a un conjunto de calzadas romanas que unían el
+                        suroeste con el noroeste peninsular. Los mejores meses
+                        para recorrerlo son marzo, abril, mayo y octubre.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:&nbsp;
+                            <span>Sevilla</span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>Longitud:&nbsp;<span>962.8km </span></p>
+                        </div>
+                        <div class="column">
+                          <p>Etapas:&nbsp;<span>38</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="camino-icon-download">
+                        <a
+                          href="./assets/pdf/GWP_caminoViaDeLaPlata.pdf"
+                          download
+                          >Descargar info<i class="fa fa-download"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-viaplata.png"
+                      alt="Mapa con las Etapas del Camino Primitivo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div class="row">
+                  <div class="column">
+                    <p class="number">05</p>
+                    <div class="camino-name">
+                      <p>Camino</p>
+                      <p>Portugués</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="etapa-description">
+                      <p>
+                        El Camino Portugués es un camino diferente. Comienza en
+                        Tui, un pueblo entre España y Portugal, divididos por el
+                        río Miño. Caminaremos a través de grandes bosques,
+                        tierras de cultivo tradicionales y pequeñas aldeas y
+                        pueblos rurales así como ciudades históricas.
+                      </p>
+                    </div>
+                    <div class="camino-data">
+                      <div class="row">
+                        <div class="column">
+                          <p>
+                            Inicio:&nbsp;
+                            <span>Tui</span>
+                          </p>
+                        </div>
+                        <div class="column">
+                          <p>Longitud:&nbsp;<span>118.8km </span></p>
+                        </div>
+                        <div class="column">
+                          <p>Etapas:&nbsp;<span>6</span></p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="camino-icon-download">
+                        <a href="./assets/pdf/GWP_caminoPortugues.pdf" download
+                          >Descargar info<i class="fa fa-download"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="etapas">
+                    <img
+                      src="./assets/imgs/etapas-portugues.png"
+                      alt="Mapa con las Etapas del Camino Primitivo"
+                    />
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="preparate">
+        <div class="main-container">
+          <div class="main-content">
+            <h1>Imprescindibles</h1>
+            <h2>para la aventura</h2>
+            <p>
+              La capacidad de la mochila debería estar dentro del rango que va
+              de los 35 a los 45 litros en época de buen tiempo, y de los 50 a
+              los 60 litros en invierno.
+            </p>
+            <p>
+              Obviamente el frío y la nieve requieren forzosamente de más y más
+              pesado equipamiento. El peso de la mochila no debería superar el
+              10% del peso corporal, con un máximo de 8 kilos.
+            </p>
+          </div>
+          <div class="main-img-container">
+            <img
+              src="./assets/imgs/preparate.png"
+              alt="Objetos ilustrados, ropa, saco de dormir, calzado"
               id="main-map"
             />
           </div>

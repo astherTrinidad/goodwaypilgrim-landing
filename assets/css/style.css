@@ -91,6 +91,134 @@
   background: var(--white);
 }
 
+/** Accordion */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.column .number {
+  margin-top: -20px;
+}
+
+.accordion {
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.accordion ul {
+  cursor: pointer;
+  list-style: none;
+  justify-content: center;
+}
+
+.accordion ul li {
+  position: relative;
+  width: calc(100% / 5);
+  float: left;
+  background-color: var(--turquoise);
+  height: 550px;
+  padding: 1rem;
+  box-shadow: 0px 6px 10px var(--darkGrey);
+}
+
+.accordion ul:hover li {
+  background-color: var(--turquoise);
+  width: calc((100% - 850px) / 4);
+  z-index: 999;
+}
+
+.accordion ul li:hover {
+  background-color: var(--mustard);
+  width: 850px;
+}
+
+.number {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-color: var(--darkGrey);
+  color: transparent;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 900;
+  mix-blend-mode: multiply;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.etapas {
+  width: max-content;
+  height: max-content;
+  border-radius: 7px;
+  margin: 2rem auto;
+}
+
+.etapas img {
+  width: 800px;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+.camino-name {
+  color: var(--white);
+  margin: 0 auto;
+  width: max-content;
+}
+
+.camino-name p:nth-child(1) {
+  font-size: 2rem;
+}
+
+.camino-name p:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.camino-data {
+  padding: 0rem 5rem;
+}
+
+.camino-data p {
+  font-weight: 600;
+}
+
+.camino-data p span {
+  font-weight: normal;
+}
+
+.camino-icon-download {
+  width: max-content;
+  height: max-content;
+  border-radius: 50%;
+  margin: 0 6rem;
+}
+
+.etapa-description p {
+  font-size: 1.25rem;
+  padding: 1.5rem 1rem 1.5rem 6rem;
+}
+
+.fa-download {
+  background-color: var(--mustard);
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 1rem 0 1rem;
+}
+
+.fa-download:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+
 @media screen and (max-width: 768px) {
   .nav-container {
     position: relative;
