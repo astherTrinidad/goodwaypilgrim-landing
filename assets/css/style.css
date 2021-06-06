@@ -91,6 +91,97 @@
   background: var(--white);
 }
 
+/** Accordion */
+.accordion {
+  width: 80%;
+  height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.accordion ul {
+  cursor: pointer;
+  list-style: none;
+  justify-content: center;
+}
+
+.accordion ul li {
+  position: relative;
+  width: calc(100% / 5);
+  float: left;
+  background-color: var(--turquoise);
+  height: 450px;
+  padding: 1rem;
+  box-shadow: 0px 6px 10px var(--darkGrey);
+}
+
+.accordion ul:hover li {
+  background-color: var(--turquoise);
+  width: calc((100% - 800px) / 4);
+}
+
+.accordion ul li:hover {
+  background-color: var(--mustard);
+  width: 800px;
+}
+
+.number {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  background-color: var(--darkGrey);
+  color: transparent;
+  text-align: center;
+  font-size: 6rem;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.camino-name {
+  color: var(--white);
+  margin: 0 auto;
+  width: max-content;
+}
+
+.camino-name p:nth-child(1) {
+  font-size: 2rem;
+}
+
+.camino-name p:nth-child(2) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.camino-data {
+  margin: 2.85rem auto;
+}
+
+.camino-data p {
+  font-weight: bold;
+}
+
+.camino-data p span {
+  font-weight: normal;
+}
+
+.camino-icon-download {
+  width: max-content;
+  height: max-content;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.fa-download {
+  background-color: var(--mustard);
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.fa-download:hover {
+  background-color: transparent;
+  border: 1px solid var(--white);
+}
+
 @media screen and (max-width: 768px) {
   .nav-container {
     position: relative;
