@@ -219,6 +219,32 @@
   border: 1px solid var(--white);
 }
 
+/** Backpack */
+#backpack {
+  background-color: lime;
+  width: max-content;
+  height: max-content;
+  margin: 0 auto;
+}
+
+#backpack .column {
+  padding: 0;
+}
+
+#backpack img {
+  background-color: purple;
+  width: 166px;
+  height: 166px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px var(--darkGrey);
+}
+
+#backpack img:hover {
+  transform: scale(1.5);
+  border-radius: 7px;
+}
+
 @media screen and (max-width: 768px) {
   .nav-container {
     position: relative;
@@ -305,5 +331,10 @@
 
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #backpack img {
+    width: 100px;
+    height: 100px;
   }
 }
