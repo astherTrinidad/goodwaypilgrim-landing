@@ -40,6 +40,8 @@
   color: var(--white);
   justify-self: start;
   margin-left: 20px;
+  height: 40px;
+  width: auto;
 }
 
 #navbar-logo {
@@ -233,8 +235,8 @@
 
 #backpack img {
   background-color: purple;
-  width: 166px;
-  height: 166px;
+  width: 150px;
+  height: 150px;
   transition: transform 0.2s;
   cursor: pointer;
   box-shadow: 0px 0px 20px var(--darkGrey);
@@ -243,6 +245,63 @@
 #backpack img:hover {
   transform: scale(1.5);
   border-radius: 7px;
+}
+
+/** PARALLAX */
+#home {
+  width: 100%;
+  height: 600px;
+}
+
+#home .container-text {
+  width: 50%;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  float: left;
+  height: max-content;
+  margin: 25% 0 0 0;
+}
+
+#home .header-texto-sup {
+  font-size: 3.25rem;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+#home .header-texto-inf {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.background-general {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.background-01 {
+  background-image: url("../imgs/index-bg01.png");
+  height: 100%;
+}
+
+.background-02 {
+  background-image: url("../imgs/index-bg02.jpg");
+}
+
+.background-03 {
+  background-image: url("../imgs/index-bg03.jpg");
+}
+
+.background-04 {
+  background-image: url("../imgs/index-bg04.jpg");
+}
+
+.background-05 {
+  background-image: url("../imgs/index-bg05.jpg");
 }
 
 @media screen and (max-width: 768px) {
@@ -334,7 +393,102 @@
   }
 
   #backpack img {
-    width: 100px;
     height: 100px;
+    width: 100px;
+  }
+
+  #home .container-text {
+    align-self: center;
+    float: left;
+    height: max-content;
+    justify-content: center;
+    margin: 50% 0 0 0;
+    text-align: center;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  #home .container-text {
+    float: none;
+    height: max-content;
+    line-height: 1;
+    margin: 0 0 0 0;
+    width: 100%;
+  }
+
+  .container-text:nth-child(1) {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 50% 0 0 0;
+  }
+
+  .container-text:nth-child(1)::after {
+    content: "";
+    background-color: var(--white);
+    height: 280px;
+    margin-top: -100px;
+    position: absolute;
+    transform: rotate(90deg);
+    width: 3px;
+  }
+
+  .container-text:nth-child(2) {
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 15% 0 0 0;
+  }
+
+  .accordion {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .accordion .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion ul li {
+    position: relative;
+    width: 100%;
+    float: none;
+    background-color: var(--turquoise);
+    height: max-content;
+    padding: 0;
+    box-shadow: 0px 6px 10px var(--darkGrey);
+  }
+
+  .accordion ul:hover li {
+    background-color: var(--turquoise);
+    height: max-content;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .accordion ul li:hover {
+    background-color: var(--mustard);
+    height: max-content;
+    width: 100%;
+  }
+
+  .accordion img {
+    display: none;
+  }
+
+  .accordion .etapa-description p {
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .camino-data {
+    padding: 0 1rem;
+    line-height: 1;
+  }
+
+  .camino-icon-download {
+    margin: 0 auto;
   }
 }
