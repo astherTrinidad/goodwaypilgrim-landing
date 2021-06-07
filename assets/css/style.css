@@ -110,7 +110,7 @@
 }
 
 .accordion {
-  width: 80%;
+  width: 83%;
   height: 550px;
   margin: 0 auto;
   overflow: hidden;
@@ -221,6 +221,40 @@
   border: 1px solid var(--white);
 }
 
+footer  {
+  font-size: 1.25rem;
+
+  margin-top: 100px;
+}
+
+.footer a:nth-of-type(1) {
+  font-size: 1.25rem;
+  padding: 4rem 2rem 4rem 3rem;
+}
+.footer i {
+  padding: 0.5rem 1rem;
+}
+.footer a:active,
+footer a:link {
+  font-size: 1.25rem;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.footer p:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 400px;
+  padding-left: 4rem;
+  text-shadow: 0px 2px 5px var(--darkGrey), 0px 2px 5px var(--darkGrey);
+}
+
+.footer p {
+  font-size: 1.25rem;
+  margin-top: 20px;
+  padding-left: 4rem;
+}
+
 /** Backpack */
 #backpack {
   background-color: lime;
@@ -285,23 +319,64 @@
 
 .background-01 {
   background-image: url("../imgs/index-bg01.png");
-  height: 100%;
+  height: 600px;
+  width: 100%;
 }
 
 .background-02 {
   background-image: url("../imgs/index-bg02.jpg");
+  height: 600px;
+  width: 100%;
 }
 
 .background-03 {
   background-image: url("../imgs/index-bg03.jpg");
+  height: 600px;
+  width: 100%;
 }
 
 .background-04 {
   background-image: url("../imgs/index-bg04.jpg");
+  height: 600px;
+  width: 100%;
 }
 
 .background-05 {
   background-image: url("../imgs/index-bg05.jpg");
+  height: 600px;
+  width: 100%;
+}
+
+.background-06 {
+  background-image: url("../imgs/index-bg06.jpg");
+  height: 600px;
+  width: 100%;
+}
+
+.icon-scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  left: 95%;
+  width: 300px;
+  scroll-margin: 0px;
+}
+
+.concha {
+  background-image: url(../imgs/conchaTurquoise.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 70%;
+  cursor: pointer;
+  height: 70px;
+  margin-top: -25px;
+  margin-left: 45%;
+  position: absolute;
+  width: 70px;
+  z-index: 999;
+}
+
+.concha:hover {
+  background-image: url(../imgs/conchaMustard.png);
 }
 
 @media screen and (max-width: 768px) {
@@ -406,6 +481,62 @@
     text-align: center;
     width: 50%;
   }
+
+  .accordion {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1.25rem 0;
+  }
+
+  .accordion .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .accordion ul li {
+    position: relative;
+    width: 100%;
+    float: none;
+    background-color: var(--turquoise);
+    height: max-content;
+    box-shadow: 0px 6px 10px var(--darkGrey);
+    border-radius: 50px;
+  }
+
+  .accordion ul:hover li {
+    background-color: var(--turquoise);
+    height: max-content;
+    width: 100%;
+    z-index: 997;
+  }
+
+  .accordion ul li:hover {
+    background-color: var(--mustard);
+    border-radius: 50px;
+    height: max-content;
+    width: 100%;
+  }
+
+  .accordion img {
+    display: none;
+  }
+
+  .accordion .etapa-description p {
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .camino-data {
+    padding: 0 1rem;
+    line-height: 1;
+  }
+
+  .camino-icon-download {
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 578px) {
@@ -439,56 +570,11 @@
     padding: 15% 0 0 0;
   }
 
-  .accordion {
-    width: 90%;
-    height: max-content;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .accordion .row {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .accordion ul li {
-    position: relative;
-    width: 100%;
-    float: none;
-    background-color: var(--turquoise);
-    height: max-content;
-    padding: 0;
-    box-shadow: 0px 6px 10px var(--darkGrey);
-  }
-
-  .accordion ul:hover li {
-    background-color: var(--turquoise);
-    height: max-content;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .accordion ul li:hover {
-    background-color: var(--mustard);
-    height: max-content;
-    width: 100%;
-  }
-
-  .accordion img {
-    display: none;
-  }
-
-  .accordion .etapa-description p {
-    padding: 2rem;
-    margin: 0;
-  }
-
-  .camino-data {
-    padding: 0 1rem;
-    line-height: 1;
-  }
-
-  .camino-icon-download {
-    margin: 0 auto;
+  .icon-scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    left: 87%;
+    width: 300px;
+    scroll-margin: 0px;
   }
 }

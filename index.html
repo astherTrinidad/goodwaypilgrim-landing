@@ -45,6 +45,7 @@
   <body>
     <header>
       <!-- Navbar -->
+      <div id="scroll"></div>
       <div class="nav-container">
         <nav class="navbar">
           <!-- <h1 id="navbar-logo">GWP</h1> -->
@@ -92,8 +93,9 @@
     </header>
 
     <main class="main">
-      <section id="GWP">
-        <div class="main-container">
+      <section>
+        <a href="#scroll"><div class="concha"></div></a>
+        <div class="main-container" id="GWP">
           <div class="main-content">
             <h1>Good Way Pilgrim</h1>
             <h2>Saca el peregrino que llevas dentro y comienza tu aventura</h2>
@@ -110,7 +112,7 @@
             </p>
             <p>¡Sé un peregrino al 100% y no pierdas ninguno de tus caminos!</p>
             <button class="main-btn">
-              <a href="http://www.goodwaypilgrim.com">Empezar</a>
+              <a href="http://www.goodwaypilgrim.com/login">Empezar</a>
             </button>
           </div>
           <div class="main-img-container">
@@ -122,7 +124,12 @@
           </div>
         </div>
       </section>
+
+      <div class="background-02 background-general"></div>
+
       <section id="camino">
+        <a href="#scroll"><div class="concha"></div></a>
+
         <div class="main-container">
           <div class="main-img-container">
             <img
@@ -158,7 +165,11 @@
         </div>
       </section>
 
+      <div class="background-03 background-general"></div>
+
       <section id="descubre">
+        <a href="#scroll"><div class="concha"></div></a>
+
         <div class="main-container">
           <div class="main-content">
             <h1>Descubre</h1>
@@ -182,6 +193,8 @@
           </div>
         </div>
       </section>
+
+      <div class="background-04 background-general"></div>
 
       <section id="etapas">
         <div class="accordion">
@@ -465,7 +478,11 @@
         </div>
       </section>
 
+      <div class="background-05 background-general"></div>
+
       <section id="preparate">
+        <a href="#scroll"><div class="concha"></div></a>
+
         <div class="main-container">
           <div class="main-content">
             <h1>Imprescindibles</h1>
@@ -559,9 +576,51 @@
           </div>
         </div>
       </section>
+      <!-- Footer Section -->
+
+      <div class="background-06 background-general">
+        <footer class="footer">
+          <p>GOOD WAY PILGRIM</p>
+
+          <div>
+            <a
+              href="mailto:info@asthertrinidad.com"
+              tabindex="0"
+              aria-label="Escríbenos un correo"
+              ><i class="fa fa-envelope"></i>info@goodwaypilgrim.com</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://twitter.com/way_pilgrim"
+              tabindex="0"
+              title="Sígueme en Twitter"
+              target="_blank"
+              aria-label="Vísitanos en Twitter"
+              ><i class="fa fa-twitter"></i>@goodwaypilgrim</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/goodwaypilgrim/"
+              tabindex="0"
+              title="Sígueme en Instagram"
+              target="_blank"
+              aria-label="Vísitanos en Instagram"
+              ><i class="fa fa-instagram"></i>@goodwaypilgrim</a
+            >
+          </div>
+
+          <p>GOOD WAY PILGRIM © 2021</p>
+        </footer>
+      </div>
+      <div class="icon-scrollToTop">
+        <a href="#scroll">
+          <img src="./assets/imgs/arrowToTop.png" alt="Flecha scroll to top" />
+        </a>
+      </div>
     </main>
 
-    <!-- Footer Section -->
     <script src="./assets/js/index.js"></script>
   </body>
 </html>

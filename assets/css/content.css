@@ -1,5 +1,5 @@
 .main {
-  background: var(--white);
+  background: var(--turquoise);
 }
 
 .main-container {
@@ -8,33 +8,34 @@
   color: var(--white);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90vh;
+  height: 70vh;
   justify-self: center;
   margin: 0 auto;
-  width: 80%;
+  width: 90%;
 }
 
 .main-content {
   color: var(--white);
   justify-self: start;
   margin-left: 40px;
-  width: 85%;
+  width: 100%;
 }
 
 .main-content h1 {
   font-family: "Roboto", sans-serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: lighter;
 }
 
 .main-content h2 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
 }
 
 .main-content p {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.5;
 }
 
 .main-btn {
@@ -90,8 +91,9 @@
 }
 
 #main-map {
-  height: 70%;
-  width: 70%;
+  height: 95%;
+  width: 95%;
+  margin: 3rem auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -104,12 +106,13 @@
     justify-self: center;
     width: 90%;
     margin: 0 auto;
+    padding: 1rem;
   }
 
   .main-content {
     justify-self: center;
     color: var(--white);
-    width: 80%;
+    width: 90%;
     margin: 2rem 0;
   }
 
@@ -122,6 +125,7 @@
 @media screen and (max-width: 480px) {
   .main-content {
     text-align: center;
+    height: max-content;
   }
 
   #main-img {
