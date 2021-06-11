@@ -48,12 +48,15 @@
       <div id="scroll"></div>
       <div class="nav-container">
         <nav class="navbar">
-          <!-- <h1 id="navbar-logo">GWP</h1> -->
-          <img
-            id="navbar-logo"
-            src="./assets/icons/gwp-blanco-logo.png"
-            alt="Logo Good Way Pilgrim"
-          />
+          <figure>
+            <a href="index.html">
+              <img
+                id="navbar-logo"
+                src="./assets/icons/gwp-blanco-logo.png"
+                alt="Logo Good Way Pilgrim"
+            /></a>
+          </figure>
+
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -78,15 +81,15 @@
       <section id="home">
         <div class="background-01 background-general">
           <div class="container-text">
-            <h1 class="header-texto-sup">SI EMOCIONA</h1>
+            <h1 class="header-texto-sup" tabindex="0">SI EMOCIONA</h1>
             <br />
-            <h2 class="header-texto-inf">PENSARLO</h2>
+            <h2 class="header-texto-inf" tabindex="0">PENSARLO</h2>
           </div>
 
           <div class="container-text">
-            <h1 class="header-texto-sup">IMAGÍNATE</h1>
+            <h1 class="header-texto-sup" tabindex="0">IMAGÍNATE</h1>
             <br />
-            <p class="header-texto-inf">HACERLO</p>
+            <p class="header-texto-inf" tabindex="0">HACERLO</p>
           </div>
         </div>
       </section>
@@ -94,24 +97,28 @@
 
     <main class="main">
       <section>
-        <a href="#scroll"><div class="concha"></div></a>
+        <a href="#scroll"><div class="concha" aria-hidden="true"></div></a>
         <div class="main-container" id="GWP">
           <div class="main-content">
-            <h1>Good Way Pilgrim</h1>
-            <h2>Saca el peregrino que llevas dentro y comienza tu aventura</h2>
-            <p>
+            <h1 tabindex="0">Good Way Pilgrim</h1>
+            <h2 tabindex="0">
+              Saca el peregrino que llevas dentro y comienza tu aventura
+            </h2>
+            <p tabindex="0">
               Realiza el Camino de Santiago y recuerda cada camino. En este
               portal podrás organizar y almacenar toda la información que te
               relacione con el Camino.
             </p>
-            <p>
-              Añade nuevos caminos a tu perfil, lévantate cada mañana y antes de
+            <p tabindex="0">
+              Añade nuevos caminos a tu perfil, levántate cada mañana y antes de
               comenzar el camino mira en qué etapa te quedaste, consigue
               nuestros logros mientras disfrutas de la naturaleza y al final del
               día márcalas como finalizadas.
             </p>
-            <p>¡Sé un peregrino al 100% y no pierdas ninguno de tus caminos!</p>
-            <button class="main-btn">
+            <p tabindex="0">
+              ¡Sé un peregrino al 100% y no pierdas ninguno de tus caminos!
+            </p>
+            <button class="main-btn" tabindex="0" role="button" id="empezar">
               <a href="http://www.goodwaypilgrim.com/login">Empezar</a>
             </button>
           </div>
@@ -125,7 +132,7 @@
         </div>
       </section>
 
-      <div class="background-02 background-general"></div>
+      <div class="background-02 background-general" aria-hidden="true"></div>
 
       <section id="camino">
         <a href="#scroll"><div class="concha"></div></a>
@@ -134,14 +141,14 @@
           <div class="main-img-container">
             <img
               src="./assets/imgs/landing_s2_camino.svg"
-              alt=""
+              alt="Ilustración de la naturaleza de noche y un chico sentado delante de una hoguera"
               id="main-img"
             />
           </div>
           <div class="main-content">
-            <h1>¿Qué es?</h1>
-            <h2>Camino de Santiago</h2>
-            <p>
+            <h1 tabindex="0">¿Qué es?</h1>
+            <h2 tabindex="0">Camino de Santiago</h2>
+            <p tabindex="0">
               El Camino de Santiago es un conjunto de Caminos compuesto por
               multitud de rutas, cuyo objetivo inicial era visitar la tumba del
               apóstol Santiago en Galicia. La tumba fue descubierta alrededor
@@ -150,13 +157,13 @@
               itinerario cultural Europeo y es Patrimonio de la Humanidad.
             </p>
 
-            <p>
+            <p tabindex="0">
               Cada uno de los caminos se adentran por ciudades y pueblos con
               encanto, podrás disfrutar tanto de paisajes por el interior de
               España como por etapas que están al borde de los acantilados.
             </p>
 
-            <p>
+            <p tabindex="0">
               Uno de los símbolos más internacionales del Camino de Santiago es
               la flecha amarilla junto con la vieira o concha, cada flecha es
               pintada a brocha en calzadas, casas, vallas o árboles.
@@ -165,36 +172,37 @@
         </div>
       </section>
 
-      <div class="background-03 background-general"></div>
+      <div class="background-03 background-general"  aria-hidden="true"></div>></div>
 
       <section id="descubre">
-        <a href="#scroll"><div class="concha"></div></a>
+        <a href="#scroll" aria-hidden="true"><div class="concha"></div></a>
 
         <div class="main-container">
           <div class="main-content">
-            <h1>Descubre</h1>
-            <h2>diferentes caminos</h2>
-            <p>
+            <h1 tabindex="0">Descubre</h1>
+            <h2 tabindex="0">diferentes caminos</h2>
+            <p tabindex="0">
               El Camino de Santiago es una aventura dura pero que una vez
               terminada sabrás que ha sido lo mejor que has podido hacer.
             </p>
-            <p>
-              Si aún no has encontrado una motivación para hacer el Camino
+            <p tabindex="0">
+              Si aún no has encontrado una motivación para hacer el Camino de
               Santiago, accede al área usuario y descubre todo aquello que
-              puedes hacer.
+              puedes hacer con esta plataforma.
             </p>
           </div>
           <div class="main-img-container">
             <img
               src="./assets/imgs/mapa-caminos.png"
-              alt="Ilustración hikking"
+              alt="Mapa de españa con todos los caminos"
               id="main-map"
+              title="Mapa de españa con todos los caminos"
             />
           </div>
         </div>
       </section>
 
-      <div class="background-04 background-general"></div>
+      <div class="background-04 background-general"  aria-hidden="true"></div>
 
       <section id="etapas">
         <div class="accordion">
@@ -216,7 +224,7 @@
                         relevancia histórica y el más seguido por los
                         peregrinos. Se caracteriza por su variedad paisajística
                         y su extraordinaria riqueza monumental. La masificación
-                        es su mayor inconeniente.
+                        es su mayor inconveniente.
                       </p>
                     </div>
                     <div class="camino-data">
@@ -485,24 +493,19 @@
 
         <div class="main-container">
           <div class="main-content">
-            <h1>Imprescindibles</h1>
-            <h2>para la aventura</h2>
-            <p>
+            <h1 tabindex="0">Imprescindibles</h1>
+            <h2 tabindex="0">para la aventura</h2>
+            <p tabindex="0">
               La capacidad de la mochila debería estar dentro del rango que va
               de los 35 a los 45 litros en época de buen tiempo, y de los 50 a
               los 60 litros en invierno.
             </p>
-            <p>
+            <p tabindex="0">
               Obviamente el frío y la nieve requieren forzosamente de más y más
               pesado equipamiento. El peso de la mochila no debería superar el
               10% del peso corporal, con un máximo de 8 kilos.
             </p>
           </div>
-          <!--   <img
-              src="./assets/imgs/backpack1.png"
-              alt="Objetos ilustrados, ropa, saco de dormir, calzado"
-              id="main-map"
-            /> -->
           <div id="backpack">
             <div class="row">
               <div class="column">
@@ -517,6 +520,7 @@
                   src="./assets/imgs/backpack2.png"
                   alt="Cantimplora, cuaderno, brújula"
                   id="main-backpack"
+                  title="Cantimplora, cuaderno, brújula"
                 />
               </div>
               <div class="column">
@@ -524,6 +528,7 @@
                   src="./assets/imgs/backpack3.png"
                   alt="Gorro, gafas de sol"
                   id="main-backpack"
+                  title="Gorro, gafas de sol"
                 />
               </div>
             </div>
@@ -533,6 +538,7 @@
                   src="./assets/imgs/backpack4.png"
                   alt="Bastón de senderismo, cuerda, navaja"
                   id="main-backpack"
+                  title="Bastón de senderismo, cuerda, navaja"
                 />
               </div>
               <div class="column">
@@ -540,13 +546,15 @@
                   src="./assets/imgs/backpack5.png"
                   alt="Chubasquero"
                   id="main-backpack"
+                  title="Chubasquero"
                 />
               </div>
               <div class="column">
                 <img
                   src="./assets/imgs/backpack6.png"
-                  alt="Camiseta corta, camiseta de tirantes, pantalón largo y corto "
+                  alt="Camiseta corta, camiseta de tirantes, pantalón largo y corto"
                   id="main-backpack"
+                  title="Camiseta corta, camiseta de tirantes, pantalón largo y corto"
                 />
               </div>
             </div>
@@ -556,6 +564,7 @@
                   src="./assets/imgs/backpack7.png"
                   alt="Botiquín, antimosquitos"
                   id="main-backpack"
+                  title="Botiquín, antimosquitos"
                 />
               </div>
               <div class="column">
@@ -563,6 +572,7 @@
                   src="./assets/imgs/backpack8.png"
                   alt="Bikini, bañador, calcetines"
                   id="main-backpack"
+                  title="Bikini, bañador, calcetines"
                 />
               </div>
               <div class="column">
@@ -570,6 +580,7 @@
                   src="./assets/imgs/backpack9.png"
                   alt="Botas de montaña, chanclas, neceser, móvil"
                   id="main-backpack"
+                  title="Botas de montaña, chanclas, neceser, móvil"
                 />
               </div>
             </div>
@@ -582,34 +593,29 @@
         <footer class="footer">
           <p>GOOD WAY PILGRIM</p>
 
-          <div>
-            <a
-              href="mailto:info@asthertrinidad.com"
-              tabindex="0"
-              aria-label="Escríbenos un correo"
-              ><i class="fa fa-envelope"></i>info@goodwaypilgrim.com</a
-            >
-          </div>
-          <div>
-            <a
-              href="https://twitter.com/way_pilgrim"
-              tabindex="0"
-              title="Sígueme en Twitter"
-              target="_blank"
-              aria-label="Vísitanos en Twitter"
-              ><i class="fa fa-twitter"></i>@goodwaypilgrim</a
-            >
-          </div>
-          <div>
-            <a
-              href="https://www.instagram.com/goodwaypilgrim/"
-              tabindex="0"
-              title="Sígueme en Instagram"
-              target="_blank"
-              aria-label="Vísitanos en Instagram"
-              ><i class="fa fa-instagram"></i>@goodwaypilgrim</a
-            >
-          </div>
+          <a
+            href="mailto:info@asthertrinidad.com"
+            tabindex="0"
+            aria-label="Escríbenos un correo"
+            ><i class="fa fa-envelope" title="Escríbenos un correo"></i>info@goodwaypilgrim.com</a
+          ><br />
+
+          <a
+            href="https://twitter.com/way_pilgrim"
+            tabindex="0"
+            target="_blank"
+            aria-label="Vísitanos en Twitter"
+            ><i class="fa fa-twitter" title="Sígueme en Twitter"></i>@goodwaypilgrim</a
+          ><br />
+
+          <a
+            href="https://www.instagram.com/goodwaypilgrim/"
+            tabindex="0"
+            target="_blank"
+            aria-label="Vísitanos en Instagram"
+            ><i class="fa fa-instagram" title="Sígueme en Instagram"
+            ></i>@goodwaypilgrim</a
+          ><br />
 
           <p>GOOD WAY PILGRIM © 2021</p>
         </footer>
