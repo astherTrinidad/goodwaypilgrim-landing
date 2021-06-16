@@ -324,7 +324,7 @@ footer a:link {
 }
 
 .background-02 {
-  background-image: url("../imgs/index-bg02.jpg");
+  background-image: url("../imgs/index-bg02_resp.jpg");
   height: 600px;
   width: 100%;
 }
@@ -576,5 +576,11 @@ footer a:link {
     left: 87%;
     width: 300px;
     scroll-margin: 0px;
+  }
+
+  .background-02 {
+    background-image: url("../imgs/index-bg02_resp.jpg");
+    height: 600px;
+    width: 100%;
   }
 }
